@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<form action="{%  url 'shop:Account_Update' pk=article.pk %}" method ='POST'>
+    {% csrf_token %}
+    Name:
+    <textarea name="Name" value="{{ account.Name }}"></textarea>
+    <br/>
+    <br/>
+
+    Call:
+    <textarea name="Call" value="{{ account.Call }}" ></textarea>
+    <br/>
+    <br/>
+
+    Address:
+    <textarea name="Address" value="{{ account.Address }}"></textarea>
+    <br/>
+    <br/>
+
+
+    <input type="submit" value="저장"/>
+
+</form>
+
+{% endblock %}
+
+

@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% block content %}
+    <h1>{{ account.Name }} </h1>
+
+    <p>{{ account.Call }}</p>
+
+    <p>{{ account.Address }}</p>
+    <a href="{% url "shop:Account_List" %}">목록</a>
+    <a href="{% url "shop:Account_List" %}">삭제</a>
+    <a href="{% url "shop:Account_List" %}">수정</a>
+
+
+
+{% endblock %}
+

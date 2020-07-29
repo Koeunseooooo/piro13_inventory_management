@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+
+<h1>거래처 list 목록</h1>
+
+
+<ul>
+    {% for account in Accounts %}
+        <li><a href="{% url 'shop:Account_Detail' pk=account.pk %}">{{ account }}</a></li>
+        <br/>
+    {% endfor %}
+</ul>
+
+{%  endblock %}
+
