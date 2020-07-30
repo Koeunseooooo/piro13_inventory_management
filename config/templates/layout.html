@@ -28,7 +28,7 @@
 
     .nav {
         display: block;
-        background-color: rgba(40, 58, 90, 1);
+        background-color: orange;
         width: 100%;
         position: fixed;
 
@@ -53,7 +53,7 @@
     }
 
     .nav__column .mainIcon > a{
-        color : cadetblue;
+        color : yellow;
     }
 
     .nav__list .nav__item > a{
@@ -87,9 +87,9 @@
     </div>
     <div class="nav__column">
         <ul class="nav__list">
-            <li class="nav__item"><a href="#" target="_self">상품 등록</a></li>
-            <li class="nav__item"><a href="#" target="_self">거래처 등록</a></li>
-            <li class="nav__item"><a href="#" target="_self">거래처 관리</a></li>
+            <li class="nav__item"><a href="{% url "shop:Account_Register" %}" target="_self">상품 등록</a></li>
+            <li class="nav__item"><a href="{% url "shop:Account_Register" %}" target="_self">거래처 등록</a></li>
+            <li class="nav__item"><a href="{% url "shop:Account_Register" %}" target="_self">거래처 관리</a></li>
         </ul>
     </div>
 
@@ -102,8 +102,8 @@
 
 <div class="footer">
     <hr/>
-    <h4>아무내용이나적는footer</h4>
-    <h5>나도 한줄 길게 아무내용이나 더 적어보자 띠링띠링</h5>
+    <h4>footer 아무거나</h4>
+    <h5>footer 내용 내용 내용 내용 내용 내용 내용 내용 </h5>
 </div>
 
 
